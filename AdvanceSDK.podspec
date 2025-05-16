@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     
     s.name             = 'AdvanceSDK'
-    s.version          = '5.1.5'
+    s.version          = '5.1.4'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.summary          = 'bayescom iOS AdvanceSDK'
     s.description      = <<-DESC
@@ -43,11 +43,11 @@ Pod::Spec.new do |s|
         adSpot.source_files = 'AdvanceSDK/Classes/AdSpot/**/*.{h,m}'
     end
     
-#    s.subspec 'MercuryAdapter' do |mer|
-#        mer.dependency 'AdvanceSDK/AdSpot'
-#        mer.dependency 'MercurySDK'
-#        mer.source_files = 'AdvanceSDK/Classes/Adapters/Mercury/**/*.{h,m}'
-#    end
+    s.subspec 'MercuryAdapter' do |mer|
+        mer.dependency 'AdvanceSDK/AdSpot'
+        mer.dependency 'MercurySDK'
+        mer.source_files = 'AdvanceSDK/Classes/Adapters/Mercury/**/*.{h,m}'
+    end
     
     s.subspec 'CSJAdapter' do |csj|
         csj.dependency 'AdvanceSDK/AdSpot'
@@ -73,11 +73,11 @@ Pod::Spec.new do |s|
         bd.source_files =  'AdvanceSDK/Classes/Adapters/BD/**/*.{h,m}'
     end
     
-#    s.subspec 'TanxAdapter' do |tanx|
-#        tanx.dependency 'AdvanceSDK/AdSpot'
-#        tanx.dependency 'TanxSDK'
-#        tanx.source_files =  'AdvanceSDK/Classes/Adapters/TANX/**/*.{h,m}'
-#    end
+    s.subspec 'TanxAdapter' do |tanx|
+        tanx.dependency 'AdvanceSDK/AdSpot'
+        tanx.dependency 'TanxSDK'
+        tanx.source_files =  'AdvanceSDK/Classes/Adapters/TANX/**/*.{h,m}'
+    end
     
     s.subspec 'SigmobAdapter' do |sigmob|
         sigmob.dependency 'AdvanceSDK/AdSpot'
