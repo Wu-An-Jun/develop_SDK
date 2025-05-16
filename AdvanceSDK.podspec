@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     
     s.homepage         = 'http://www.bayescom.com/'
     s.author           = { 'bayescom' => 'http://www.bayescom.com/' }
-    s.source           = { :git => 'git@gitee.com:explorex-one/iOS_AdvanceSDK.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/bayescom/AdvanceSDK.git', :tag => s.version.to_s }
     
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
     s.platform     = :ios, "12.0"
@@ -43,11 +43,11 @@ Pod::Spec.new do |s|
         adSpot.source_files = 'AdvanceSDK/Classes/AdSpot/**/*.{h,m}'
     end
     
-    s.subspec 'MercuryAdapter' do |mer|
-        mer.dependency 'AdvanceSDK/AdSpot'
-        mer.dependency 'MercurySDK'
-        mer.source_files = 'AdvanceSDK/Classes/Adapters/Mercury/**/*.{h,m}'
-    end
+#    s.subspec 'MercuryAdapter' do |mer|
+#        mer.dependency 'AdvanceSDK/AdSpot'
+#        mer.dependency 'MercurySDK'
+#        mer.source_files = 'AdvanceSDK/Classes/Adapters/Mercury/**/*.{h,m}'
+#    end
     
     s.subspec 'CSJAdapter' do |csj|
         csj.dependency 'AdvanceSDK/AdSpot'
@@ -73,11 +73,11 @@ Pod::Spec.new do |s|
         bd.source_files =  'AdvanceSDK/Classes/Adapters/BD/**/*.{h,m}'
     end
     
-    s.subspec 'TanxAdapter' do |tanx|
-        tanx.dependency 'AdvanceSDK/AdSpot'
-        tanx.dependency 'TanxSDK'
-        tanx.source_files =  'AdvanceSDK/Classes/Adapters/TANX/**/*.{h,m}'
-    end
+#    s.subspec 'TanxAdapter' do |tanx|
+#        tanx.dependency 'AdvanceSDK/AdSpot'
+#        tanx.dependency 'TanxSDK'
+#        tanx.source_files =  'AdvanceSDK/Classes/Adapters/TANX/**/*.{h,m}'
+#    end
     
     s.subspec 'SigmobAdapter' do |sigmob|
         sigmob.dependency 'AdvanceSDK/AdSpot'
