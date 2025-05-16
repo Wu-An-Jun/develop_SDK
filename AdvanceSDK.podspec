@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     
     s.homepage         = 'http://www.bayescom.com/'
     s.author           = { 'bayescom' => 'http://www.bayescom.com/' }
-    s.source           = { :git => 'https://github.com/bayescom/AdvanceSDK.git', :tag => s.version.to_s }
+    s.source           = { :git => 'git@gitee.com:explorex-one/iOS_AdvanceSDK.git', :tag => s.version.to_s }
     
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
     s.platform     = :ios, "12.0"
