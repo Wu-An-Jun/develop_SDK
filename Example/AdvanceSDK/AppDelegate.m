@@ -51,7 +51,7 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [AdvSdkConfig shareInstance].appId = @"102768";
+    [AdvSdkConfig shareInstance].appId = @"100008";
     [AdvBayesSDKConfig setUserAgent:@"ua"];
     [AdvBayesSDKConfig setAAIDWithMediaId:@"media001" mediaSecret:@"243835763"];
     
