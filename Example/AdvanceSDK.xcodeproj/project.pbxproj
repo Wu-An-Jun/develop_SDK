@@ -40,6 +40,7 @@
 		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		84422B852DDC6BA0003A2930 /* LDemoCustomAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84422B842DDC6B92003A2930 /* LDemoCustomAdViewController.m */; };
 		D6BD9A687524DF95FBEA9309 /* Pods_AdvanceSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FFE2B097C59C62F06E8EED /* Pods_AdvanceSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,8 @@
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72FFE2B097C59C62F06E8EED /* Pods_AdvanceSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvanceSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84422B832DDC6B3D003A2930 /* LDemoCustomAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDemoCustomAdViewController.h; sourceTree = "<group>"; };
+		84422B842DDC6B92003A2930 /* LDemoCustomAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDemoCustomAdViewController.m; sourceTree = "<group>"; };
 		E5B804D9A1812796B3A043CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +150,8 @@
 		220A7EA82BD11F1E0043492A /* AdControllers */ = {
 			isa = PBXGroup;
 			children = (
+				84422B842DDC6B92003A2930 /* LDemoCustomAdViewController.m */,
+				84422B832DDC6B3D003A2930 /* LDemoCustomAdViewController.h */,
 				220A7EB12BD11F1E0043492A /* DemoBannerViewController.h */,
 				220A7EB72BD11F1E0043492A /* DemoBannerViewController.m */,
 				220A7EB02BD11F1E0043492A /* DemoFullScreenVideoController.h */,
@@ -527,6 +532,7 @@
 				31FE7BC624482CEE00CB2062 /* JDStatusBarNotification.m in Sources */,
 				220A7EC12BD11F1E0043492A /* DemoFullScreenVideoController.m in Sources */,
 				31FE7BC724482CEE00CB2062 /* JDStatusBarView.m in Sources */,
+				84422B852DDC6BA0003A2930 /* LDemoCustomAdViewController.m in Sources */,
 				31FE7BC924482CEE00CB2062 /* JDStatusBarStyle.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				31FE7BC524482CEE00CB2062 /* ViewBuilder.m in Sources */,
@@ -672,7 +678,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9ST9FLC84N;
+				DEVELOPMENT_TEAM = Q8SJ99MR9Q;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -778,7 +784,7 @@
 					"-weak_framework",
 					"\"WebKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ios.test.develop.media;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.lzc.develop.media;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -794,7 +800,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9ST9FLC84N;
+				DEVELOPMENT_TEAM = Q8SJ99MR9Q;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -899,7 +905,7 @@
 					"-weak_framework",
 					"\"WebKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ios.test.develop.media;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.lzc.develop.media;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
