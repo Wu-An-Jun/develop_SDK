@@ -437,7 +437,6 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AdvanceSDK_Example/Pods-AdvanceSDK_Example-resources.sh",
 				"${PODS_ROOT}/Ads-CN-Beta/SDK/CSJAdSDK.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/AdvanceSDK/AdvanceSDK.bundle",
 				"${PODS_ROOT}/BaiduMobAdSDK/baidumobadsdk.bundle",
 				"${PODS_ROOT}/TanxSDK/TanxSDK/TanxSDK.library/TanxSDK.framework/TanxID.bundle/back_left.png",
 				"${PODS_ROOT}/TanxSDK/TanxSDK/TanxSDK.library/TanxSDK.framework/TanxID.bundle/feed_close@2x.png",
@@ -458,11 +457,11 @@
 				"${PODS_ROOT}/TanxSDK/TanxSDK/TanxSDK.library/TanxSDK.framework/TanxID.bundle/uninterested_write@3x.png",
 				"${PODS_ROOT}/TanxSDK/TanxSDK/TanxSDK.library/TanxSDK.framework/TanxID.bundle/unmute_icon.png",
 				"${PODS_ROOT}/TanxSDK/TanxSDK/TanxSDK.library/TanxSDK.framework/TanxID.bundle/white_close_icon.png",
+				"${PODS_CONFIGURATION_BUILD_DIR}/newios_sdk/newios_sdk.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSJAdSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AdvanceSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_left.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feed_close@2x.png",
@@ -483,6 +482,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/uninterested_write@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unmute_icon.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/white_close_icon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/newios_sdk.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

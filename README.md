@@ -267,3 +267,13 @@ git lfs version
 ## 验收测试
 
 代码对接完成后请提供测试包给我方对接测试人员进行验收。
+
+| 代理方法                                                         | 介绍                                   |
+|------------------------------------------------------------------|----------------------------------------|
+| - didFinishLoadingADPolicyWithSpotId:                             | 广告策略服务加载成功                   |
+| - didFailLoadingADSourceWithSpotId: error: description:           | 广告策略或者渠道广告加载失败           |
+| - didStartLoadingADSourceWithSpotId: sourceId:                    | 广告位中某一个广告源开始加载广告<br>sourceId :将要加载的渠道id |
+| - didFinishLoadingSplashADWithSpotId:                             | 开屏广告数据拉取成功                   |
+| - splashDidShowForSpotId: extra:                                  | 开屏广告展示成功                       |
+| - splashDidClickForSpotId: extra:                                 | 开屏广告被点击                         |
+| - splashDidCloseForSpotId: extra:                                 | 开屏广告被关闭                         |

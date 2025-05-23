@@ -9,7 +9,8 @@
 #import "DemoBannerViewController.h"
 #import "ViewBuilder.h"
 #import "AdvSdkConfig.h"
-#import <AdvanceSDK/AdvanceBanner.h>
+#import <newios_sdk/AdvanceBanner.h>
+//#import <AdvanceSDK/AdvanceBanner.h>
 
 @interface DemoBannerViewController () <AdvanceBannerDelegate>
 @property (nonatomic, strong) AdvanceBanner *advanceBanner;

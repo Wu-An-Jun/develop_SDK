@@ -7,8 +7,8 @@
 //
 
 #import "DemoInterstitialViewController.h"
-#import <AdvanceSDK/AdvanceInterstitial.h>
-
+//#import <AdvanceSDK/AdvanceInterstitial.h>
+#import <newios_sdk/AdvanceInterstitial.h>
 @interface DemoInterstitialViewController () <AdvanceInterstitialDelegate>
 @property (nonatomic, strong) AdvanceInterstitial *advanceInterstitial;
 @end

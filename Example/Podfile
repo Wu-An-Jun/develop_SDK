@@ -1,41 +1,92 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+#use_frameworks!
+#platform :ios, '12.0'
+#target 'AdvanceSDK_Example' do
+#
+#  #必须集成
+#  pod 'AdvanceSDK', :path => '../'
+#  
+#  #集成倍业Adapter
+#  pod 'AdvanceSDK/MercuryAdapter', :path => '../'
+#  pod 'MercurySDK', '4.4.7'
+#
+#  #集成穿山甲Adapter
+#  pod 'AdvanceSDK/CSJAdapter',  :path => '../'
+#  pod 'Ads-CN-Beta', '6.8.0.1', :subspecs => ['BUAdSDK', 'CSJMediation']
+#
+#  #集成广点通Adapter
+#  pod 'AdvanceSDK/GDTAdapter', :path => '../'
+#  pod 'GDTMobSDK', '4.15.30'
+#
+#  #集成快手Adapter
+#  pod 'AdvanceSDK/KSAdapter', :path => '../'
+#  pod 'KSAdSDK', '3.3.74'
+#
+#  #集成百度Adapter
+#  pod 'AdvanceSDK/BDAdapter', :path => '../'
+#  pod 'BaiduMobAdSDK', '5.373'
+#  
+#  #集成TanxAdapter
+#  pod 'AdvanceSDK/TanxAdapter', :path => '../'
+#  pod 'TanxSDK', '3.7.2'
+#  
+#  #集成SigMobAdapter
+#  pod 'AdvanceSDK/SigmobAdapter', :path => '../'
+#  pod 'SigmobAd-iOS', '4.17.0'
+#  
+#
+#  #Third
+#  pod 'SDWebImage'
+#  
+#  post_install do |installer|
+#    installer.generated_projects.each do |project|
+#      project.targets.each do |target|
+#        target.build_configurations.each do |config|
+#          config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = "arm64"
+#        end
+#      end
+#    end
+#  end
+#
+#end
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 platform :ios, '12.0'
+
 target 'AdvanceSDK_Example' do
 
-  #必须集成
-  pod 'AdvanceSDK', :path => '../'
-  
-  #集成倍业Adapter
-  pod 'AdvanceSDK/MercuryAdapter', :path => '../'
+  # 必须集成主SDK
+  pod 'newios_sdk'
+
+  # 集成倍业Adapter
+  pod 'newios_sdk/MercuryAdapter'
   pod 'MercurySDK', '4.4.7'
 
-  #集成穿山甲Adapter
-  pod 'AdvanceSDK/CSJAdapter',  :path => '../'
+  # 集成穿山甲Adapter
+  pod 'newios_sdk/CSJAdapter'
   pod 'Ads-CN-Beta', '6.8.0.1', :subspecs => ['BUAdSDK', 'CSJMediation']
 
-  #集成广点通Adapter
-  pod 'AdvanceSDK/GDTAdapter', :path => '../'
+  # 集成广点通Adapter
+  pod 'newios_sdk/GDTAdapter'
   pod 'GDTMobSDK', '4.15.30'
 
-  #集成快手Adapter
-  pod 'AdvanceSDK/KSAdapter', :path => '../'
+  # 集成快手Adapter
+  pod 'newios_sdk/KSAdapter'
   pod 'KSAdSDK', '3.3.74'
 
-  #集成百度Adapter
-  pod 'AdvanceSDK/BDAdapter', :path => '../'
+  # 集成百度Adapter
+  pod 'newios_sdk/BDAdapter'
   pod 'BaiduMobAdSDK', '5.373'
   
-  #集成TanxAdapter
-  pod 'AdvanceSDK/TanxAdapter', :path => '../'
+  # 集成TanxAdapter
+  pod 'newios_sdk/TanxAdapter'
   pod 'TanxSDK', '3.7.2'
   
-  #集成SigMobAdapter
-  pod 'AdvanceSDK/SigmobAdapter', :path => '../'
+  # 集成SigMobAdapter
+  pod 'newios_sdk/SigmobAdapter'
   pod 'SigmobAd-iOS', '4.17.0'
   
-
-  #Third
+  # Third
   pod 'SDWebImage'
   
   post_install do |installer|

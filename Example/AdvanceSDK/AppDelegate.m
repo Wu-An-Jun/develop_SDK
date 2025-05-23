@@ -16,7 +16,7 @@
 
 #import "ViewController.h"
 #import <AdvanceSplash.h>
-#import <AdvanceSDK/AdvanceSplash.h>
+#import <newios_sdk/AdvanceSplash.h>
 #import <AdvSdkConfig.h>
 #import <AdvBayesSDKConfig.h>
 
@@ -51,7 +51,8 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [AdvSdkConfig shareInstance].appId = @"100008";
+//    [AdvSdkConfig shareInstance].appId = @"100008";
+    [AdvSdkConfig shareInstance].appId = @"102768";
     [AdvBayesSDKConfig setUserAgent:@"ua"];
     [AdvBayesSDKConfig setAAIDWithMediaId:@"media001" mediaSecret:@"243835763"];
     

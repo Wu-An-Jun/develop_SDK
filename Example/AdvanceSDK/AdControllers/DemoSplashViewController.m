@@ -7,7 +7,8 @@
 //
 
 #import "DemoSplashViewController.h"
-#import <AdvanceSDK/AdvanceSplash.h>
+//#import <AdvanceSDK/AdvanceSplash.h>
+#import <newios_sdk/AdvanceSplash.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "UIApplication+Adv.h"

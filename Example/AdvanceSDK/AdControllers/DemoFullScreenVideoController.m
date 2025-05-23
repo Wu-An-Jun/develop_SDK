@@ -7,7 +7,8 @@
 //
 
 #import "DemoFullScreenVideoController.h"
-#import <AdvanceSDK/AdvanceFullScreenVideo.h>
+//#import <AdvanceSDK/AdvanceFullScreenVideo.h>
+#import <newios_sdk/AdvanceFullScreenVideo.h>
 
 @interface DemoFullScreenVideoController () <AdvanceFullScreenVideoDelegate>
 @property (nonatomic, strong) AdvanceFullScreenVideo *advanceFullScreenVideo;
